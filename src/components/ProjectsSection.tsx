@@ -12,8 +12,8 @@ const projects = [
       "60% less runtime errors",
       "95% layout accuracy via NLP",
     ],
-    liveLink: "#",
-    githubLink: null,
+    liveLink: "https://prompt-site-creator-80-48667vacy-rishikesh-sararngis-projects.vercel.app/",
+    githubLink: "https://github.com/Rishicreates20/prompt-site-creator-80",
     featured: true,
   },
   {
@@ -26,8 +26,8 @@ const projects = [
       "12% precision improvement",
       "15% churn reduction for stakeholders",
     ],
-    liveLink: null,
-    githubLink: "#",
+    liveLink: "#" ,
+    githubLink: "https://github.com/Rishicreates20/Customer-Churn-Prediction-Python-ML-",
     featured: true,
   },
   {
@@ -40,8 +40,8 @@ const projects = [
       "99.9% calculation accuracy",
       "10+ crypto portfolio tracking",
     ],
-    liveLink: "#",
-    githubLink: null,
+    liveLink: "https://crypto-trackerrr123.netlify.app/",
+    githubLink: "https://github.com/Rishicreates20/Crypto-tracker",
     featured: false,
   },
   {
@@ -55,7 +55,7 @@ const projects = [
       "24-hour stress tested",
     ],
     liveLink: null,
-    githubLink: "#",
+    githubLink: "https://github.com/Rishicreates20/iot-weather-station",
     featured: false,
   },
 ];
