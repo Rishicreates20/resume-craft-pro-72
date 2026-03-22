@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="py-8 border-t border-border">
       <div className="container flex flex-col items-center gap-4">
         <div className="flex items-center gap-5">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+          <a href="https://github.com/Rishicreates20" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
             <Github size={18} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/rishikesh-sarangi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
             <Linkedin size={18} />
           </a>
           <a href="mailto:rishikeshsarangi56@gmail.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
