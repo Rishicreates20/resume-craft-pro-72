@@ -29,7 +29,7 @@ const HeroSection = () => {
 
           <div className="flex items-center gap-5 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/Rishicreates20"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -38,7 +38,7 @@ const HeroSection = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rishikesh-sarangi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
