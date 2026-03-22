@@ -35,6 +35,15 @@ const Navbar = () => {
             </li>
           ))}
           <li>
+            <button
+              onClick={toggleTheme}
+              className="text-muted-foreground hover:text-primary transition-colors p-1"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+          </li>
+          <li>
             <a
               href="/Rishikesh_cv_2026_1.pdf"
               target="_blank"
