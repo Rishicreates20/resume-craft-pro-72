@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "@/hooks/use-theme";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -11,6 +12,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
   const [open, setOpen] = useState(false);
 
   return (
@@ -32,6 +34,15 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li>
+            <button
+              onClick={toggleTheme}
+              className="text-muted-foreground hover:text-primary transition-colors p-1"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
+          </li>
           <li>
             <a
               href="/Rishikesh_cv_2026_1.pdf"
