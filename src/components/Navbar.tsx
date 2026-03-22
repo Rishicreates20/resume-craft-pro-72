@@ -12,6 +12,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
   const [open, setOpen] = useState(false);
 
   return (
