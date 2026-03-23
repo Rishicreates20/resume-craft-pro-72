@@ -4,6 +4,22 @@ import { ExternalLink, Github, Folder, ChevronDown, ChevronUp } from "lucide-rea
 
 const projects = [
   {
+    title: "Path4U — AI-Powered Career Intelligence Platform",
+    description:
+      "Full-stack AI career platform that lets users upload resumes, take adaptive assessments, uncover skill gaps, and get matched with roles that fit. Features smart resume scanning, AI-adaptive questioning, personalized skill gap analysis, job matching, and career roadmaps — serving 10K+ resumes analyzed with 95% accuracy.",
+    tech: ["React", "TypeScript", "AI/ML", "NLP", "Supabase", "Tailwind CSS"],
+    highlights: [
+      "10K+ resumes analyzed",
+      "95% accuracy rate",
+      "500+ jobs matched",
+      "AI-adaptive assessments",
+    ],
+    liveLink: "https://path4u.lovable.app/",
+    githubLink: "https://github.com/Rishicreates20/Pitch4U",
+    featured: true,
+    dream: true,
+  },
+  {
     title: "AI-Powered Prompt-to-Website Builder",
     description:
       "Full-stack SaaS platform converting natural language into deployable websites using OpenAI GPT-4, serving 500+ users with 99.9% uptime. Features intelligent layout generation, responsive design output, and one-click deployment.",
@@ -205,7 +221,9 @@ const ProjectsSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
                 className={`bg-card rounded-lg p-6 md:p-8 border transition-colors group ${
-                  project.featured
+                  (project as any).dream
+                    ? "border-primary/40 hover:border-primary shadow-[0_0_25px_hsl(172_66%_50%/0.12)] ring-1 ring-primary/10"
+                    : project.featured
                     ? "border-primary/20 hover:border-primary/50 shadow-[0_0_15px_hsl(172_66%_50%/0.05)]"
                     : "border-border hover:border-primary/30"
                 }`}
@@ -213,7 +231,12 @@ const ProjectsSection = () => {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-2">
                     <Folder size={28} className="text-primary" />
-                    {project.featured && (
+                    {(project as any).dream && (
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30 uppercase tracking-wider font-bold animate-pulse">
+                        ★ Dream Project
+                      </span>
+                    )}
+                    {project.featured && !(project as any).dream && (
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20 uppercase tracking-wider">
                         Featured
                       </span>
