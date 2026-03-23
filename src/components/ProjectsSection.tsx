@@ -221,7 +221,9 @@ const ProjectsSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
                 className={`bg-card rounded-lg p-6 md:p-8 border transition-colors group ${
-                  project.featured
+                  (project as any).dream
+                    ? "border-primary/40 hover:border-primary shadow-[0_0_25px_hsl(172_66%_50%/0.12)] ring-1 ring-primary/10"
+                    : project.featured
                     ? "border-primary/20 hover:border-primary/50 shadow-[0_0_15px_hsl(172_66%_50%/0.05)]"
                     : "border-border hover:border-primary/30"
                 }`}
