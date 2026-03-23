@@ -231,7 +231,12 @@ const ProjectsSection = () => {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-2">
                     <Folder size={28} className="text-primary" />
-                    {project.featured && (
+                    {(project as any).dream && (
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30 uppercase tracking-wider font-bold animate-pulse">
+                        ★ Dream Project
+                      </span>
+                    )}
+                    {project.featured && !(project as any).dream && (
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20 uppercase tracking-wider">
                         Featured
                       </span>
