@@ -4,6 +4,22 @@ import { ExternalLink, Github, Folder, ChevronDown, ChevronUp } from "lucide-rea
 
 const projects = [
   {
+    title: "Path4U — AI-Powered Career Intelligence Platform",
+    description:
+      "Full-stack AI career platform that lets users upload resumes, take adaptive assessments, uncover skill gaps, and get matched with roles that fit. Features smart resume scanning, AI-adaptive questioning, personalized skill gap analysis, job matching, and career roadmaps — serving 10K+ resumes analyzed with 95% accuracy.",
+    tech: ["React", "TypeScript", "AI/ML", "NLP", "Supabase", "Tailwind CSS"],
+    highlights: [
+      "10K+ resumes analyzed",
+      "95% accuracy rate",
+      "500+ jobs matched",
+      "AI-adaptive assessments",
+    ],
+    liveLink: "https://path4u.lovable.app/",
+    githubLink: "https://github.com/Rishicreates20/Pitch4U",
+    featured: true,
+    dream: true,
+  },
+  {
     title: "AI-Powered Prompt-to-Website Builder",
     description:
       "Full-stack SaaS platform converting natural language into deployable websites using OpenAI GPT-4, serving 500+ users with 99.9% uptime. Features intelligent layout generation, responsive design output, and one-click deployment.",
